@@ -442,3 +442,39 @@ marker#arrowhead path {
 .mermaid marker path {
   fill: white !important;
 }
+
+pre{
+  p{
+    a{
+      color: #2e8555 !important;
+    }
+  }
+}
+
+.kDuBQd {
+  padding: 0 0 !important;
+  .jkwlQD{
+    font-weight: 700 !important;
+  }
+}
+.dRVblm {
+    padding: 5px 0 !important;
+}
+
+ .dKykVD {
+  font-weight: 700 !important;
+
+ }
+
+ .ktHhjV{
+  color: #03070a !important;
+ }
+
+ .back-button{
+  color: black !important;
+  margin: 20px; 
+  font-size: 20px;
+  img{
+    margin-right: 10px;
+  }
+ }
