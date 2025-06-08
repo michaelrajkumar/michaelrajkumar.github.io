@@ -52,10 +52,10 @@ Hide color mode toggle in small viewports
   padding-left: 4.5% !important;
   height: auto;
 } */
+
 .container{
-      
-        max-width: 100% !important;
-    }
+     max-width: 100% !important;
+}
 .navbar__brand {
   flex: 1;
 }
@@ -93,10 +93,11 @@ Hide color mode toggle in small viewports
     justify-content: space-between;
     align-items: center;
   }
-  /* .container {
-      max-width: var(--ifm-container-width-xl);
-      margin: 2%;
-  } */
+
+  .container {
+     max-width: 100% !important;
+  } 
+  
   .navbar {
     padding-top: 4% !important; /* Add top padding */
     padding-bottom: 4% !important;
@@ -137,15 +138,11 @@ Hide color mode toggle in small viewports
   text-align: center;
 }
 
-/* @media (min-width: 1440px) {
+@media (min-width: 1440px) {
   .container {
-      max-width: var(--ifm-container-width-xl);
-      margin: 1%;
+      max-width: 100% !important;
   }
-} */
-/* .menu__list {
-  padding-left: 18%;
-} */
+} 
 .status {
   margin-top: 3%;
 }
@@ -236,24 +233,10 @@ Hide color mode toggle in small viewports
     clip-path: none !important;
   }
 
-  .docMainContainer_TBSr {
-    background-color: #03070a;
-    /* .container {
-      padding-top: 0 !important;
-      margin-top: 0 !important;
-      .row {
-        padding: 0px !important;
-      }
-    } */
-  }
 }
 
 .docMainContainer_TBSr {
   background-color: #03070a;
-  /* .container {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  } */
 }
 
 .menu__link {
