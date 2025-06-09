@@ -2,17 +2,18 @@
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>disputesIdDocumentsDocumentIdDelete</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">disputesIdDocumentsDocumentIdDelete</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">disputesIdDocumentsDocumentIdDelete</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -21,7 +22,7 @@
               </button>
       </div>
       
-<div className="code-block curl active" id="disputesIdDocumentsDocumentIdDelete-code-curl">
+<div class="code-block curl active" id="disputesIdDocumentsDocumentIdDelete-code-curl">
 ```js
 curl -X DELETE\
 -H "Accept: application/json"\
@@ -29,7 +30,7 @@ curl -X DELETE\
 ```
 </div>
 
-<div className="code-block java" id="disputesIdDocumentsDocumentIdDelete-code-java">
+<div class="code-block java" id="disputesIdDocumentsDocumentIdDelete-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -58,7 +59,7 @@ public class DocumentsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="disputesIdDocumentsDocumentIdDelete-code-android">
+<div class="code-block android" id="disputesIdDocumentsDocumentIdDelete-code-android">
 ```js
 import io.swagger.client.api.DocumentsApi;
 
@@ -80,7 +81,7 @@ public class DocumentsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="disputesIdDocumentsDocumentIdDelete-code-objc">
+<div class="code-block objc" id="disputesIdDocumentsDocumentIdDelete-code-objc">
 ```js
 String *id = id_example; // 
 String *documentId = documentId_example; // 
@@ -100,7 +101,7 @@ DocumentsApi *apiInstance = [[DocumentsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="disputesIdDocumentsDocumentIdDelete-code-javascript">
+<div class="code-block javascript" id="disputesIdDocumentsDocumentIdDelete-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -119,7 +120,7 @@ api.disputesIdDocumentsDocumentIdDelete(id, documentId, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="disputesIdDocumentsDocumentIdDelete-code-csharp">
+<div class="code-block csharp" id="disputesIdDocumentsDocumentIdDelete-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -153,7 +154,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="disputesIdDocumentsDocumentIdDelete-code-php">
+<div class="code-block php" id="disputesIdDocumentsDocumentIdDelete-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -172,7 +173,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="disputesIdDocumentsDocumentIdDelete-code-perl">
+<div class="code-block perl" id="disputesIdDocumentsDocumentIdDelete-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -192,7 +193,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="disputesIdDocumentsDocumentIdDelete-code-python">
+<div class="code-block python" id="disputesIdDocumentsDocumentIdDelete-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -212,23 +213,33 @@ except ApiException as e:
     print("Exception when calling DocumentsApi->disputesIdDocumentsDocumentIdDelete: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+| document_id* | String Required |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>disputesIdDocumentsDocumentIdGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">disputesIdDocumentsDocumentIdGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">disputesIdDocumentsDocumentIdGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -237,7 +248,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="disputesIdDocumentsDocumentIdGet-code-curl">
+<div class="code-block curl active" id="disputesIdDocumentsDocumentIdGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -245,7 +256,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="disputesIdDocumentsDocumentIdGet-code-java">
+<div class="code-block java" id="disputesIdDocumentsDocumentIdGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -274,7 +285,7 @@ public class DocumentsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="disputesIdDocumentsDocumentIdGet-code-android">
+<div class="code-block android" id="disputesIdDocumentsDocumentIdGet-code-android">
 ```js
 import io.swagger.client.api.DocumentsApi;
 
@@ -296,7 +307,7 @@ public class DocumentsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="disputesIdDocumentsDocumentIdGet-code-objc">
+<div class="code-block objc" id="disputesIdDocumentsDocumentIdGet-code-objc">
 ```js
 String *id = id_example; // 
 String *documentId = documentId_example; // 
@@ -316,7 +327,7 @@ DocumentsApi *apiInstance = [[DocumentsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="disputesIdDocumentsDocumentIdGet-code-javascript">
+<div class="code-block javascript" id="disputesIdDocumentsDocumentIdGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -335,7 +346,7 @@ api.disputesIdDocumentsDocumentIdGet(id, documentId, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="disputesIdDocumentsDocumentIdGet-code-csharp">
+<div class="code-block csharp" id="disputesIdDocumentsDocumentIdGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -369,7 +380,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="disputesIdDocumentsDocumentIdGet-code-php">
+<div class="code-block php" id="disputesIdDocumentsDocumentIdGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -388,7 +399,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="disputesIdDocumentsDocumentIdGet-code-perl">
+<div class="code-block perl" id="disputesIdDocumentsDocumentIdGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -408,7 +419,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="disputesIdDocumentsDocumentIdGet-code-python">
+<div class="code-block python" id="disputesIdDocumentsDocumentIdGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -428,23 +439,33 @@ except ApiException as e:
     print("Exception when calling DocumentsApi->disputesIdDocumentsDocumentIdGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+| document_id* | String Required |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>disputesIdDocumentsGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">disputesIdDocumentsGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">disputesIdDocumentsGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -453,7 +474,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="disputesIdDocumentsGet-code-curl">
+<div class="code-block curl active" id="disputesIdDocumentsGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -461,7 +482,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="disputesIdDocumentsGet-code-java">
+<div class="code-block java" id="disputesIdDocumentsGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -494,7 +515,7 @@ public class DocumentsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="disputesIdDocumentsGet-code-android">
+<div class="code-block android" id="disputesIdDocumentsGet-code-android">
 ```js
 import io.swagger.client.api.DocumentsApi;
 
@@ -520,7 +541,7 @@ public class DocumentsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="disputesIdDocumentsGet-code-objc">
+<div class="code-block objc" id="disputesIdDocumentsGet-code-objc">
 ```js
 String *id = id_example; // 
 Date *from = 2013-10-20T19:20:30+01:00; //  (optional) (default to 1970-01-01T00:00Z)
@@ -548,7 +569,7 @@ DocumentsApi *apiInstance = [[DocumentsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="disputesIdDocumentsGet-code-javascript">
+<div class="code-block javascript" id="disputesIdDocumentsGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -572,7 +593,7 @@ api.disputesIdDocumentsGet(id, opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="disputesIdDocumentsGet-code-csharp">
+<div class="code-block csharp" id="disputesIdDocumentsGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -610,7 +631,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="disputesIdDocumentsGet-code-php">
+<div class="code-block php" id="disputesIdDocumentsGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -633,7 +654,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="disputesIdDocumentsGet-code-perl">
+<div class="code-block perl" id="disputesIdDocumentsGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -657,7 +678,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="disputesIdDocumentsGet-code-python">
+<div class="code-block python" id="disputesIdDocumentsGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -681,23 +702,43 @@ except ApiException as e:
     print("Exception when calling DocumentsApi->disputesIdDocumentsGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+
+
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| from | Date (date-time) |
+| to | Date (date-time) |
+| offset | Integer |
+| limit | Integer |
+| order | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>disputesIdDocumentsPost</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">disputesIdDocumentsPost</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">disputesIdDocumentsPost</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -706,7 +747,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="disputesIdDocumentsPost-code-curl">
+<div class="code-block curl active" id="disputesIdDocumentsPost-code-curl">
 ```js
 curl -X POST\
 -H "Accept: application/json"\
@@ -715,7 +756,7 @@ curl -X POST\
 ```
 </div>
 
-<div className="code-block java" id="disputesIdDocumentsPost-code-java">
+<div class="code-block java" id="disputesIdDocumentsPost-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -745,7 +786,7 @@ public class DocumentsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="disputesIdDocumentsPost-code-android">
+<div class="code-block android" id="disputesIdDocumentsPost-code-android">
 ```js
 import io.swagger.client.api.DocumentsApi;
 
@@ -768,7 +809,7 @@ public class DocumentsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="disputesIdDocumentsPost-code-objc">
+<div class="code-block objc" id="disputesIdDocumentsPost-code-objc">
 ```js
 String *id = id_example; // 
 String *file = file_example; //  (optional)
@@ -790,7 +831,7 @@ DocumentsApi *apiInstance = [[DocumentsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="disputesIdDocumentsPost-code-javascript">
+<div class="code-block javascript" id="disputesIdDocumentsPost-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -811,7 +852,7 @@ api.disputesIdDocumentsPost(id, opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="disputesIdDocumentsPost-code-csharp">
+<div class="code-block csharp" id="disputesIdDocumentsPost-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -846,7 +887,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="disputesIdDocumentsPost-code-php">
+<div class="code-block php" id="disputesIdDocumentsPost-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -866,7 +907,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="disputesIdDocumentsPost-code-perl">
+<div class="code-block perl" id="disputesIdDocumentsPost-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -887,7 +928,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="disputesIdDocumentsPost-code-python">
+<div class="code-block python" id="disputesIdDocumentsPost-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -908,56 +949,23 @@ except ApiException as e:
     print("Exception when calling DocumentsApi->disputesIdDocumentsPost: %s\n" % e)
 ```
 </div>
+     
     </div>
-  </div>
-</div>
-
-# Parameters
-path Parameters
+     
+### Parameters
 
 | Name | Description |
-|------|------|
-| id* | String Required |
-| document_id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-| document_id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
+|------|-------------|
 | id* | String Required |
 
-# Parameters
-path Parameters
+
+### Parameters
 
 | Name | Description |
-|------|------|
-| from | Date (date-time) |
-| to | Date (date-time) |
-| offset | Integer |
-| limit | Integer |
-| order | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
+|------|-------------|
 | file | String |
 | kind | String |
+
+  </div>
+</div>
 

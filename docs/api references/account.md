@@ -2,17 +2,18 @@
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>accountApiVersionPatch</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">accountApiVersionPatch</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">accountApiVersionPatch</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -21,7 +22,7 @@
               </button>
       </div>
       
-<div className="code-block curl active" id="accountApiVersionPatch-code-curl">
+<div class="code-block curl active" id="accountApiVersionPatch-code-curl">
 ```js
 curl -X PATCH\
 -H "Accept: application/json"\
@@ -29,7 +30,7 @@ curl -X PATCH\
 ```
 </div>
 
-<div className="code-block java" id="accountApiVersionPatch-code-java">
+<div class="code-block java" id="accountApiVersionPatch-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -56,7 +57,7 @@ public class AccountApiExample {
 ```
 </div>
 
-<div className="code-block android" id="accountApiVersionPatch-code-android">
+<div class="code-block android" id="accountApiVersionPatch-code-android">
 ```js
 import io.swagger.client.api.AccountApi;
 
@@ -76,7 +77,7 @@ public class AccountApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="accountApiVersionPatch-code-objc">
+<div class="code-block objc" id="accountApiVersionPatch-code-objc">
 ```js
 AccountApi *apiInstance = [[AccountApi alloc] init];
 
@@ -92,7 +93,7 @@ AccountApi *apiInstance = [[AccountApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="accountApiVersionPatch-code-javascript">
+<div class="code-block javascript" id="accountApiVersionPatch-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -108,7 +109,7 @@ api.accountApiVersionPatch(callback);
 ```
 </div>
 
-<div className="code-block csharp" id="accountApiVersionPatch-code-csharp">
+<div class="code-block csharp" id="accountApiVersionPatch-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -140,7 +141,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="accountApiVersionPatch-code-php">
+<div class="code-block php" id="accountApiVersionPatch-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -157,7 +158,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="accountApiVersionPatch-code-perl">
+<div class="code-block perl" id="accountApiVersionPatch-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -175,7 +176,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="accountApiVersionPatch-code-python">
+<div class="code-block python" id="accountApiVersionPatch-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -193,23 +194,26 @@ except ApiException as e:
     print("Exception when calling AccountApi->accountApiVersionPatch: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>accountApiVersionsGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">accountApiVersionsGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">accountApiVersionsGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -218,7 +222,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="accountApiVersionsGet-code-curl">
+<div class="code-block curl active" id="accountApiVersionsGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -226,7 +230,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="accountApiVersionsGet-code-java">
+<div class="code-block java" id="accountApiVersionsGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -253,7 +257,7 @@ public class AccountApiExample {
 ```
 </div>
 
-<div className="code-block android" id="accountApiVersionsGet-code-android">
+<div class="code-block android" id="accountApiVersionsGet-code-android">
 ```js
 import io.swagger.client.api.AccountApi;
 
@@ -273,7 +277,7 @@ public class AccountApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="accountApiVersionsGet-code-objc">
+<div class="code-block objc" id="accountApiVersionsGet-code-objc">
 ```js
 AccountApi *apiInstance = [[AccountApi alloc] init];
 
@@ -289,7 +293,7 @@ AccountApi *apiInstance = [[AccountApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="accountApiVersionsGet-code-javascript">
+<div class="code-block javascript" id="accountApiVersionsGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -305,7 +309,7 @@ api.accountApiVersionsGet(callback);
 ```
 </div>
 
-<div className="code-block csharp" id="accountApiVersionsGet-code-csharp">
+<div class="code-block csharp" id="accountApiVersionsGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -337,7 +341,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="accountApiVersionsGet-code-php">
+<div class="code-block php" id="accountApiVersionsGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -354,7 +358,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="accountApiVersionsGet-code-perl">
+<div class="code-block perl" id="accountApiVersionsGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -372,7 +376,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="accountApiVersionsGet-code-python">
+<div class="code-block python" id="accountApiVersionsGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -390,23 +394,26 @@ except ApiException as e:
     print("Exception when calling AccountApi->accountApiVersionsGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>accountPatch</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">accountPatch</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">accountPatch</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -415,7 +422,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="accountPatch-code-curl">
+<div class="code-block curl active" id="accountPatch-code-curl">
 ```js
 curl -X PATCH\
 -H "Accept: application/json"\
@@ -424,7 +431,7 @@ curl -X PATCH\
 ```
 </div>
 
-<div className="code-block java" id="accountPatch-code-java">
+<div class="code-block java" id="accountPatch-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -456,7 +463,7 @@ public class AccountApiExample {
 ```
 </div>
 
-<div className="code-block android" id="accountPatch-code-android">
+<div class="code-block android" id="accountPatch-code-android">
 ```js
 import io.swagger.client.api.AccountApi;
 
@@ -481,7 +488,7 @@ public class AccountApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="accountPatch-code-objc">
+<div class="code-block objc" id="accountPatch-code-objc">
 ```js
 Boolean *chainEnabled = true; //  (optional)
 Boolean *zeroInterestInstallments = true; //  (optional)
@@ -507,7 +514,7 @@ AccountApi *apiInstance = [[AccountApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="accountPatch-code-javascript">
+<div class="code-block javascript" id="accountPatch-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -530,7 +537,7 @@ api.accountPatch(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="accountPatch-code-csharp">
+<div class="code-block csharp" id="accountPatch-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -567,7 +574,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="accountPatch-code-php">
+<div class="code-block php" id="accountPatch-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -589,7 +596,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="accountPatch-code-perl">
+<div class="code-block perl" id="accountPatch-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -612,7 +619,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="accountPatch-code-python">
+<div class="code-block python" id="accountPatch-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -635,18 +642,19 @@ except ApiException as e:
     print("Exception when calling AccountApi->accountPatch: %s\n" % e)
 ```
 </div>
+     
     </div>
-  </div>
-</div>
-
-# Parameters
-path Parameters
+     
+### Parameters
 
 | Name | Description |
-|------|------|
+|------|-------------|
 | chain_enabled | Boolean |
 | zero_interest_installments | Boolean |
 | chain_return_uri | String (uri) |
 | webhook_uri | String (uri) |
 | metadata_export_keys | account_metadata_export_keys |
+
+  </div>
+</div>
 

@@ -2,17 +2,18 @@
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>linkedAccountsGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">linkedAccountsGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">linkedAccountsGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -21,7 +22,7 @@
               </button>
       </div>
       
-<div className="code-block curl active" id="linkedAccountsGet-code-curl">
+<div class="code-block curl active" id="linkedAccountsGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -29,7 +30,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="linkedAccountsGet-code-java">
+<div class="code-block java" id="linkedAccountsGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -61,7 +62,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="linkedAccountsGet-code-android">
+<div class="code-block android" id="linkedAccountsGet-code-android">
 ```js
 import io.swagger.client.api.LinkedAccountsApi;
 
@@ -86,7 +87,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="linkedAccountsGet-code-objc">
+<div class="code-block objc" id="linkedAccountsGet-code-objc">
 ```js
 Date *from = 2013-10-20T19:20:30+01:00; //  (optional) (default to 1970-01-01T00:00Z)
 Date *to = 2013-10-20T19:20:30+01:00; //  (optional)
@@ -112,7 +113,7 @@ LinkedAccountsApi *apiInstance = [[LinkedAccountsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="linkedAccountsGet-code-javascript">
+<div class="code-block javascript" id="linkedAccountsGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -135,7 +136,7 @@ api.linkedAccountsGet(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="linkedAccountsGet-code-csharp">
+<div class="code-block csharp" id="linkedAccountsGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -172,7 +173,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="linkedAccountsGet-code-php">
+<div class="code-block php" id="linkedAccountsGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -194,7 +195,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="linkedAccountsGet-code-perl">
+<div class="code-block perl" id="linkedAccountsGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -217,7 +218,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="linkedAccountsGet-code-python">
+<div class="code-block python" id="linkedAccountsGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -240,23 +241,36 @@ except ApiException as e:
     print("Exception when calling LinkedAccountsApi->linkedAccountsGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| from | Date (date-time) |
+| to | Date (date-time) |
+| offset | Integer |
+| limit | Integer |
+| order | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>linkedAccountsIdDelete</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">linkedAccountsIdDelete</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">linkedAccountsIdDelete</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -265,7 +279,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="linkedAccountsIdDelete-code-curl">
+<div class="code-block curl active" id="linkedAccountsIdDelete-code-curl">
 ```js
 curl -X DELETE\
 -H "Accept: application/json"\
@@ -273,7 +287,7 @@ curl -X DELETE\
 ```
 </div>
 
-<div className="code-block java" id="linkedAccountsIdDelete-code-java">
+<div class="code-block java" id="linkedAccountsIdDelete-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -301,7 +315,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="linkedAccountsIdDelete-code-android">
+<div class="code-block android" id="linkedAccountsIdDelete-code-android">
 ```js
 import io.swagger.client.api.LinkedAccountsApi;
 
@@ -322,7 +336,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="linkedAccountsIdDelete-code-objc">
+<div class="code-block objc" id="linkedAccountsIdDelete-code-objc">
 ```js
 String *id = id_example; // 
 
@@ -340,7 +354,7 @@ LinkedAccountsApi *apiInstance = [[LinkedAccountsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="linkedAccountsIdDelete-code-javascript">
+<div class="code-block javascript" id="linkedAccountsIdDelete-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -358,7 +372,7 @@ api.linkedAccountsIdDelete(id, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="linkedAccountsIdDelete-code-csharp">
+<div class="code-block csharp" id="linkedAccountsIdDelete-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -391,7 +405,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="linkedAccountsIdDelete-code-php">
+<div class="code-block php" id="linkedAccountsIdDelete-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -409,7 +423,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="linkedAccountsIdDelete-code-perl">
+<div class="code-block perl" id="linkedAccountsIdDelete-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -428,7 +442,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="linkedAccountsIdDelete-code-python">
+<div class="code-block python" id="linkedAccountsIdDelete-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -447,23 +461,32 @@ except ApiException as e:
     print("Exception when calling LinkedAccountsApi->linkedAccountsIdDelete: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>linkedAccountsIdGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">linkedAccountsIdGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">linkedAccountsIdGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -472,7 +495,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="linkedAccountsIdGet-code-curl">
+<div class="code-block curl active" id="linkedAccountsIdGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -480,7 +503,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="linkedAccountsIdGet-code-java">
+<div class="code-block java" id="linkedAccountsIdGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -508,7 +531,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="linkedAccountsIdGet-code-android">
+<div class="code-block android" id="linkedAccountsIdGet-code-android">
 ```js
 import io.swagger.client.api.LinkedAccountsApi;
 
@@ -529,7 +552,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="linkedAccountsIdGet-code-objc">
+<div class="code-block objc" id="linkedAccountsIdGet-code-objc">
 ```js
 String *id = id_example; // 
 
@@ -547,7 +570,7 @@ LinkedAccountsApi *apiInstance = [[LinkedAccountsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="linkedAccountsIdGet-code-javascript">
+<div class="code-block javascript" id="linkedAccountsIdGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -565,7 +588,7 @@ api.linkedAccountsIdGet(id, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="linkedAccountsIdGet-code-csharp">
+<div class="code-block csharp" id="linkedAccountsIdGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -598,7 +621,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="linkedAccountsIdGet-code-php">
+<div class="code-block php" id="linkedAccountsIdGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -616,7 +639,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="linkedAccountsIdGet-code-perl">
+<div class="code-block perl" id="linkedAccountsIdGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -635,7 +658,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="linkedAccountsIdGet-code-python">
+<div class="code-block python" id="linkedAccountsIdGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -654,23 +677,32 @@ except ApiException as e:
     print("Exception when calling LinkedAccountsApi->linkedAccountsIdGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>linkedAccountsPost</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">linkedAccountsPost</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">linkedAccountsPost</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -679,7 +711,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="linkedAccountsPost-code-curl">
+<div class="code-block curl active" id="linkedAccountsPost-code-curl">
 ```js
 curl -X POST\
 -H "Accept: application/json"\
@@ -688,7 +720,7 @@ curl -X POST\
 ```
 </div>
 
-<div className="code-block java" id="linkedAccountsPost-code-java">
+<div class="code-block java" id="linkedAccountsPost-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -719,7 +751,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="linkedAccountsPost-code-android">
+<div class="code-block android" id="linkedAccountsPost-code-android">
 ```js
 import io.swagger.client.api.LinkedAccountsApi;
 
@@ -743,7 +775,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="linkedAccountsPost-code-objc">
+<div class="code-block objc" id="linkedAccountsPost-code-objc">
 ```js
 String *returnUri = returnUri_example; //  (optional)
 String *type = type_example; //  (optional)
@@ -767,7 +799,7 @@ LinkedAccountsApi *apiInstance = [[LinkedAccountsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="linkedAccountsPost-code-javascript">
+<div class="code-block javascript" id="linkedAccountsPost-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -789,7 +821,7 @@ api.linkedAccountsPost(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="linkedAccountsPost-code-csharp">
+<div class="code-block csharp" id="linkedAccountsPost-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -825,7 +857,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="linkedAccountsPost-code-php">
+<div class="code-block php" id="linkedAccountsPost-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -846,7 +878,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="linkedAccountsPost-code-perl">
+<div class="code-block perl" id="linkedAccountsPost-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -868,7 +900,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="linkedAccountsPost-code-python">
+<div class="code-block python" id="linkedAccountsPost-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -890,23 +922,35 @@ except ApiException as e:
     print("Exception when calling LinkedAccountsApi->linkedAccountsPost: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| return_uri | String |
+| type | String |
+| metadata | Object |
+| citizen_id | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>linkedAccountsSearchGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">linkedAccountsSearchGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">linkedAccountsSearchGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -915,7 +959,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="linkedAccountsSearchGet-code-curl">
+<div class="code-block curl active" id="linkedAccountsSearchGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -923,7 +967,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="linkedAccountsSearchGet-code-java">
+<div class="code-block java" id="linkedAccountsSearchGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -955,7 +999,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="linkedAccountsSearchGet-code-android">
+<div class="code-block android" id="linkedAccountsSearchGet-code-android">
 ```js
 import io.swagger.client.api.LinkedAccountsApi;
 
@@ -980,7 +1024,7 @@ public class LinkedAccountsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="linkedAccountsSearchGet-code-objc">
+<div class="code-block objc" id="linkedAccountsSearchGet-code-objc">
 ```js
 String *scope = scope_example; //  (optional) (default to linked_account)
 String *query = query_example; //  (optional)
@@ -1006,7 +1050,7 @@ LinkedAccountsApi *apiInstance = [[LinkedAccountsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="linkedAccountsSearchGet-code-javascript">
+<div class="code-block javascript" id="linkedAccountsSearchGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -1029,7 +1073,7 @@ api.linkedAccountsSearchGet(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="linkedAccountsSearchGet-code-csharp">
+<div class="code-block csharp" id="linkedAccountsSearchGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -1066,7 +1110,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="linkedAccountsSearchGet-code-php">
+<div class="code-block php" id="linkedAccountsSearchGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -1088,7 +1132,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="linkedAccountsSearchGet-code-perl">
+<div class="code-block perl" id="linkedAccountsSearchGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -1111,7 +1155,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="linkedAccountsSearchGet-code-python">
+<div class="code-block python" id="linkedAccountsSearchGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -1134,53 +1178,19 @@ except ApiException as e:
     print("Exception when calling LinkedAccountsApi->linkedAccountsSearchGet: %s\n" % e)
 ```
 </div>
+     
     </div>
-  </div>
-</div>
-
-# Parameters
-path Parameters
+     
+### Parameters
 
 | Name | Description |
-|------|------|
-| from | Date (date-time) |
-| to | Date (date-time) |
-| offset | Integer |
-| limit | Integer |
-| order | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| return_uri | String |
-| type | String |
-| metadata | Object |
-| citizen_id | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
+|------|-------------|
 | scope | String |
 | query | String |
 | filters[created] | Date (date-time) |
 | filters[status] | String |
 | filters[type] | String |
+
+  </div>
+</div>
 

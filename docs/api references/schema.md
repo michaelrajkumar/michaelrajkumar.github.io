@@ -2,17 +2,18 @@
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>schemaGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">schemaGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">schemaGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -21,14 +22,14 @@
               </button>
       </div>
       
-<div className="code-block curl active" id="schemaGet-code-curl">
+<div class="code-block curl active" id="schemaGet-code-curl">
 ```js
 curl -X GET\
 "https://api.omise.co/schema?version=&private="
 ```
 </div>
 
-<div className="code-block java" id="schemaGet-code-java">
+<div class="code-block java" id="schemaGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -56,7 +57,7 @@ public class SchemaApiExample {
 ```
 </div>
 
-<div className="code-block android" id="schemaGet-code-android">
+<div class="code-block android" id="schemaGet-code-android">
 ```js
 import io.swagger.client.api.SchemaApi;
 
@@ -77,7 +78,7 @@ public class SchemaApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="schemaGet-code-objc">
+<div class="code-block objc" id="schemaGet-code-objc">
 ```js
 String *version = version_example; //  (optional) (default to 2019-05-29)
 Boolean *private = true; //  (optional) (default to false)
@@ -94,7 +95,7 @@ SchemaApi *apiInstance = [[SchemaApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="schemaGet-code-javascript">
+<div class="code-block javascript" id="schemaGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -114,7 +115,7 @@ api.schemaGet(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="schemaGet-code-csharp">
+<div class="code-block csharp" id="schemaGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -147,7 +148,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="schemaGet-code-php">
+<div class="code-block php" id="schemaGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -165,7 +166,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="schemaGet-code-perl">
+<div class="code-block perl" id="schemaGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -184,7 +185,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="schemaGet-code-python">
+<div class="code-block python" id="schemaGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -203,15 +204,16 @@ except ApiException as e:
     print("Exception when calling SchemaApi->schemaGet: %s\n" % e)
 ```
 </div>
+     
     </div>
-  </div>
-</div>
-
-# Parameters
-path Parameters
+     
+### Parameters
 
 | Name | Description |
-|------|------|
+|------|-------------|
 | version | String |
 | private | Boolean |
+
+  </div>
+</div>
 

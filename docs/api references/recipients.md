@@ -2,17 +2,18 @@
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>recipientsGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">recipientsGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">recipientsGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -21,7 +22,7 @@
               </button>
       </div>
       
-<div className="code-block curl active" id="recipientsGet-code-curl">
+<div class="code-block curl active" id="recipientsGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -29,7 +30,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="recipientsGet-code-java">
+<div class="code-block java" id="recipientsGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -61,7 +62,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="recipientsGet-code-android">
+<div class="code-block android" id="recipientsGet-code-android">
 ```js
 import io.swagger.client.api.RecipientsApi;
 
@@ -86,7 +87,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="recipientsGet-code-objc">
+<div class="code-block objc" id="recipientsGet-code-objc">
 ```js
 Date *from = 2013-10-20T19:20:30+01:00; //  (optional) (default to 1970-01-01T00:00Z)
 Date *to = 2013-10-20T19:20:30+01:00; //  (optional)
@@ -112,7 +113,7 @@ RecipientsApi *apiInstance = [[RecipientsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="recipientsGet-code-javascript">
+<div class="code-block javascript" id="recipientsGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -135,7 +136,7 @@ api.recipientsGet(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="recipientsGet-code-csharp">
+<div class="code-block csharp" id="recipientsGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -172,7 +173,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="recipientsGet-code-php">
+<div class="code-block php" id="recipientsGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -194,7 +195,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="recipientsGet-code-perl">
+<div class="code-block perl" id="recipientsGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -217,7 +218,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="recipientsGet-code-python">
+<div class="code-block python" id="recipientsGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -240,23 +241,36 @@ except ApiException as e:
     print("Exception when calling RecipientsApi->recipientsGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| from | Date (date-time) |
+| to | Date (date-time) |
+| offset | Integer |
+| limit | Integer |
+| order | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>recipientsIdDelete</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">recipientsIdDelete</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">recipientsIdDelete</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -265,7 +279,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="recipientsIdDelete-code-curl">
+<div class="code-block curl active" id="recipientsIdDelete-code-curl">
 ```js
 curl -X DELETE\
 -H "Accept: application/json"\
@@ -273,7 +287,7 @@ curl -X DELETE\
 ```
 </div>
 
-<div className="code-block java" id="recipientsIdDelete-code-java">
+<div class="code-block java" id="recipientsIdDelete-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -301,7 +315,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="recipientsIdDelete-code-android">
+<div class="code-block android" id="recipientsIdDelete-code-android">
 ```js
 import io.swagger.client.api.RecipientsApi;
 
@@ -322,7 +336,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="recipientsIdDelete-code-objc">
+<div class="code-block objc" id="recipientsIdDelete-code-objc">
 ```js
 String *id = id_example; // 
 
@@ -340,7 +354,7 @@ RecipientsApi *apiInstance = [[RecipientsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="recipientsIdDelete-code-javascript">
+<div class="code-block javascript" id="recipientsIdDelete-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -358,7 +372,7 @@ api.recipientsIdDelete(id, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="recipientsIdDelete-code-csharp">
+<div class="code-block csharp" id="recipientsIdDelete-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -391,7 +405,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="recipientsIdDelete-code-php">
+<div class="code-block php" id="recipientsIdDelete-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -409,7 +423,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="recipientsIdDelete-code-perl">
+<div class="code-block perl" id="recipientsIdDelete-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -428,7 +442,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="recipientsIdDelete-code-python">
+<div class="code-block python" id="recipientsIdDelete-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -447,23 +461,32 @@ except ApiException as e:
     print("Exception when calling RecipientsApi->recipientsIdDelete: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>recipientsIdGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">recipientsIdGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">recipientsIdGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -472,7 +495,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="recipientsIdGet-code-curl">
+<div class="code-block curl active" id="recipientsIdGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -480,7 +503,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="recipientsIdGet-code-java">
+<div class="code-block java" id="recipientsIdGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -508,7 +531,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="recipientsIdGet-code-android">
+<div class="code-block android" id="recipientsIdGet-code-android">
 ```js
 import io.swagger.client.api.RecipientsApi;
 
@@ -529,7 +552,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="recipientsIdGet-code-objc">
+<div class="code-block objc" id="recipientsIdGet-code-objc">
 ```js
 String *id = id_example; // 
 
@@ -547,7 +570,7 @@ RecipientsApi *apiInstance = [[RecipientsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="recipientsIdGet-code-javascript">
+<div class="code-block javascript" id="recipientsIdGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -565,7 +588,7 @@ api.recipientsIdGet(id, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="recipientsIdGet-code-csharp">
+<div class="code-block csharp" id="recipientsIdGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -598,7 +621,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="recipientsIdGet-code-php">
+<div class="code-block php" id="recipientsIdGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -616,7 +639,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="recipientsIdGet-code-perl">
+<div class="code-block perl" id="recipientsIdGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -635,7 +658,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="recipientsIdGet-code-python">
+<div class="code-block python" id="recipientsIdGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -654,23 +677,32 @@ except ApiException as e:
     print("Exception when calling RecipientsApi->recipientsIdGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>recipientsIdPatch</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">recipientsIdPatch</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">recipientsIdPatch</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -679,7 +711,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="recipientsIdPatch-code-curl">
+<div class="code-block curl active" id="recipientsIdPatch-code-curl">
 ```js
 curl -X PATCH\
 -H "Accept: application/json"\
@@ -688,7 +720,7 @@ curl -X PATCH\
 ```
 </div>
 
-<div className="code-block java" id="recipientsIdPatch-code-java">
+<div class="code-block java" id="recipientsIdPatch-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -723,7 +755,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="recipientsIdPatch-code-android">
+<div class="code-block android" id="recipientsIdPatch-code-android">
 ```js
 import io.swagger.client.api.RecipientsApi;
 
@@ -751,7 +783,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="recipientsIdPatch-code-objc">
+<div class="code-block objc" id="recipientsIdPatch-code-objc">
 ```js
 String *id = id_example; // 
 recipientsid_bank_account *bankAccount = ; //  (optional)
@@ -783,7 +815,7 @@ RecipientsApi *apiInstance = [[RecipientsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="recipientsIdPatch-code-javascript">
+<div class="code-block javascript" id="recipientsIdPatch-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -809,7 +841,7 @@ api.recipientsIdPatch(id, opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="recipientsIdPatch-code-csharp">
+<div class="code-block csharp" id="recipientsIdPatch-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -849,7 +881,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="recipientsIdPatch-code-php">
+<div class="code-block php" id="recipientsIdPatch-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -874,7 +906,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="recipientsIdPatch-code-perl">
+<div class="code-block perl" id="recipientsIdPatch-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -900,7 +932,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="recipientsIdPatch-code-python">
+<div class="code-block python" id="recipientsIdPatch-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -926,23 +958,45 @@ except ApiException as e:
     print("Exception when calling RecipientsApi->recipientsIdPatch: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+
+
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| bank_account | recipientsid_bank_account |
+| description | String |
+| email | String |
+| metadata | Object |
+| name | String |
+| tax_id | String |
+| type | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>recipientsIdSchedulesGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">recipientsIdSchedulesGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">recipientsIdSchedulesGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -951,7 +1005,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="recipientsIdSchedulesGet-code-curl">
+<div class="code-block curl active" id="recipientsIdSchedulesGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -959,7 +1013,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="recipientsIdSchedulesGet-code-java">
+<div class="code-block java" id="recipientsIdSchedulesGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -992,7 +1046,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="recipientsIdSchedulesGet-code-android">
+<div class="code-block android" id="recipientsIdSchedulesGet-code-android">
 ```js
 import io.swagger.client.api.RecipientsApi;
 
@@ -1018,7 +1072,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="recipientsIdSchedulesGet-code-objc">
+<div class="code-block objc" id="recipientsIdSchedulesGet-code-objc">
 ```js
 String *id = id_example; // 
 Date *from = 2013-10-20T19:20:30+01:00; //  (optional) (default to 1970-01-01T00:00Z)
@@ -1046,7 +1100,7 @@ RecipientsApi *apiInstance = [[RecipientsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="recipientsIdSchedulesGet-code-javascript">
+<div class="code-block javascript" id="recipientsIdSchedulesGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -1070,7 +1124,7 @@ api.recipientsIdSchedulesGet(id, opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="recipientsIdSchedulesGet-code-csharp">
+<div class="code-block csharp" id="recipientsIdSchedulesGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -1108,7 +1162,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="recipientsIdSchedulesGet-code-php">
+<div class="code-block php" id="recipientsIdSchedulesGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -1131,7 +1185,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="recipientsIdSchedulesGet-code-perl">
+<div class="code-block perl" id="recipientsIdSchedulesGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -1155,7 +1209,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="recipientsIdSchedulesGet-code-python">
+<div class="code-block python" id="recipientsIdSchedulesGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -1179,23 +1233,43 @@ except ApiException as e:
     print("Exception when calling RecipientsApi->recipientsIdSchedulesGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+
+
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| from | Date (date-time) |
+| to | Date (date-time) |
+| offset | Integer |
+| limit | Integer |
+| order | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>recipientsIdVerifyPatch</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">recipientsIdVerifyPatch</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">recipientsIdVerifyPatch</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -1204,7 +1278,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="recipientsIdVerifyPatch-code-curl">
+<div class="code-block curl active" id="recipientsIdVerifyPatch-code-curl">
 ```js
 curl -X PATCH\
 -H "Accept: application/json"\
@@ -1212,7 +1286,7 @@ curl -X PATCH\
 ```
 </div>
 
-<div className="code-block java" id="recipientsIdVerifyPatch-code-java">
+<div class="code-block java" id="recipientsIdVerifyPatch-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -1240,7 +1314,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="recipientsIdVerifyPatch-code-android">
+<div class="code-block android" id="recipientsIdVerifyPatch-code-android">
 ```js
 import io.swagger.client.api.RecipientsApi;
 
@@ -1261,7 +1335,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="recipientsIdVerifyPatch-code-objc">
+<div class="code-block objc" id="recipientsIdVerifyPatch-code-objc">
 ```js
 String *id = id_example; // 
 
@@ -1279,7 +1353,7 @@ RecipientsApi *apiInstance = [[RecipientsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="recipientsIdVerifyPatch-code-javascript">
+<div class="code-block javascript" id="recipientsIdVerifyPatch-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -1297,7 +1371,7 @@ api.recipientsIdVerifyPatch(id, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="recipientsIdVerifyPatch-code-csharp">
+<div class="code-block csharp" id="recipientsIdVerifyPatch-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -1330,7 +1404,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="recipientsIdVerifyPatch-code-php">
+<div class="code-block php" id="recipientsIdVerifyPatch-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -1348,7 +1422,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="recipientsIdVerifyPatch-code-perl">
+<div class="code-block perl" id="recipientsIdVerifyPatch-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -1367,7 +1441,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="recipientsIdVerifyPatch-code-python">
+<div class="code-block python" id="recipientsIdVerifyPatch-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -1386,23 +1460,32 @@ except ApiException as e:
     print("Exception when calling RecipientsApi->recipientsIdVerifyPatch: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| id* | String Required |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>recipientsPost</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">recipientsPost</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">recipientsPost</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -1411,7 +1494,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="recipientsPost-code-curl">
+<div class="code-block curl active" id="recipientsPost-code-curl">
 ```js
 curl -X POST\
 -H "Accept: application/json"\
@@ -1420,7 +1503,7 @@ curl -X POST\
 ```
 </div>
 
-<div className="code-block java" id="recipientsPost-code-java">
+<div class="code-block java" id="recipientsPost-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -1454,7 +1537,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="recipientsPost-code-android">
+<div class="code-block android" id="recipientsPost-code-android">
 ```js
 import io.swagger.client.api.RecipientsApi;
 
@@ -1481,7 +1564,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="recipientsPost-code-objc">
+<div class="code-block objc" id="recipientsPost-code-objc">
 ```js
 recipientsid_bank_account *bankAccount = ; //  (optional)
 String *description = description_example; //  (optional)
@@ -1511,7 +1594,7 @@ RecipientsApi *apiInstance = [[RecipientsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="recipientsPost-code-javascript">
+<div class="code-block javascript" id="recipientsPost-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -1536,7 +1619,7 @@ api.recipientsPost(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="recipientsPost-code-csharp">
+<div class="code-block csharp" id="recipientsPost-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -1575,7 +1658,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="recipientsPost-code-php">
+<div class="code-block php" id="recipientsPost-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -1599,7 +1682,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="recipientsPost-code-perl">
+<div class="code-block perl" id="recipientsPost-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -1624,7 +1707,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="recipientsPost-code-python">
+<div class="code-block python" id="recipientsPost-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -1649,23 +1732,38 @@ except ApiException as e:
     print("Exception when calling RecipientsApi->recipientsPost: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| bank_account | recipientsid_bank_account |
+| description | String |
+| email | String |
+| metadata | Object |
+| name | String |
+| tax_id | String |
+| type | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>recipientsSearchGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">recipientsSearchGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">recipientsSearchGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -1674,7 +1772,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="recipientsSearchGet-code-curl">
+<div class="code-block curl active" id="recipientsSearchGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -1682,7 +1780,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="recipientsSearchGet-code-java">
+<div class="code-block java" id="recipientsSearchGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -1720,7 +1818,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="recipientsSearchGet-code-android">
+<div class="code-block android" id="recipientsSearchGet-code-android">
 ```js
 import io.swagger.client.api.RecipientsApi;
 
@@ -1751,7 +1849,7 @@ public class RecipientsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="recipientsSearchGet-code-objc">
+<div class="code-block objc" id="recipientsSearchGet-code-objc">
 ```js
 String *scope = scope_example; //  (optional) (default to recipient)
 String *query = query_example; //  (optional)
@@ -1789,7 +1887,7 @@ RecipientsApi *apiInstance = [[RecipientsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="recipientsSearchGet-code-javascript">
+<div class="code-block javascript" id="recipientsSearchGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -1818,7 +1916,7 @@ api.recipientsSearchGet(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="recipientsSearchGet-code-csharp">
+<div class="code-block csharp" id="recipientsSearchGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -1861,7 +1959,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="recipientsSearchGet-code-php">
+<div class="code-block php" id="recipientsSearchGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -1889,7 +1987,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="recipientsSearchGet-code-perl">
+<div class="code-block perl" id="recipientsSearchGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -1918,7 +2016,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="recipientsSearchGet-code-python">
+<div class="code-block python" id="recipientsSearchGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -1947,98 +2045,13 @@ except ApiException as e:
     print("Exception when calling RecipientsApi->recipientsSearchGet: %s\n" % e)
 ```
 </div>
+     
     </div>
-  </div>
-</div>
-
-# Parameters
-path Parameters
+     
+### Parameters
 
 | Name | Description |
-|------|------|
-| from | Date (date-time) |
-| to | Date (date-time) |
-| offset | Integer |
-| limit | Integer |
-| order | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| bank_account | recipientsid_bank_account |
-| description | String |
-| email | String |
-| metadata | Object |
-| name | String |
-| tax_id | String |
-| type | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| from | Date (date-time) |
-| to | Date (date-time) |
-| offset | Integer |
-| limit | Integer |
-| order | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| id* | String Required |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| bank_account | recipientsid_bank_account |
-| description | String |
-| email | String |
-| metadata | Object |
-| name | String |
-| tax_id | String |
-| type | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
+|------|-------------|
 | scope | String |
 | query | String |
 | filters[active] | Boolean |
@@ -2050,4 +2063,7 @@ path Parameters
 | filters[type] | String |
 | filters[verified] | Boolean |
 | filters[verified_at] | Date (date-time) |
+
+  </div>
+</div>
 

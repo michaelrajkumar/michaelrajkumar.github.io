@@ -2,17 +2,18 @@
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>subMerchantsGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">subMerchantsGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">subMerchantsGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -21,7 +22,7 @@
               </button>
       </div>
       
-<div className="code-block curl active" id="subMerchantsGet-code-curl">
+<div class="code-block curl active" id="subMerchantsGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -29,7 +30,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="subMerchantsGet-code-java">
+<div class="code-block java" id="subMerchantsGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -61,7 +62,7 @@ public class SubMerchantsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="subMerchantsGet-code-android">
+<div class="code-block android" id="subMerchantsGet-code-android">
 ```js
 import io.swagger.client.api.SubMerchantsApi;
 
@@ -86,7 +87,7 @@ public class SubMerchantsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="subMerchantsGet-code-objc">
+<div class="code-block objc" id="subMerchantsGet-code-objc">
 ```js
 Date *from = 2013-10-20T19:20:30+01:00; //  (optional) (default to 1970-01-01T00:00Z)
 Date *to = 2013-10-20T19:20:30+01:00; //  (optional)
@@ -112,7 +113,7 @@ SubMerchantsApi *apiInstance = [[SubMerchantsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="subMerchantsGet-code-javascript">
+<div class="code-block javascript" id="subMerchantsGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -135,7 +136,7 @@ api.subMerchantsGet(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="subMerchantsGet-code-csharp">
+<div class="code-block csharp" id="subMerchantsGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -172,7 +173,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="subMerchantsGet-code-php">
+<div class="code-block php" id="subMerchantsGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -194,7 +195,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="subMerchantsGet-code-perl">
+<div class="code-block perl" id="subMerchantsGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -217,7 +218,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="subMerchantsGet-code-python">
+<div class="code-block python" id="subMerchantsGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -240,23 +241,36 @@ except ApiException as e:
     print("Exception when calling SubMerchantsApi->subMerchantsGet: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| from | Date (date-time) |
+| to | Date (date-time) |
+| offset | Integer |
+| limit | Integer |
+| order | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>subMerchantsPost</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">subMerchantsPost</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">subMerchantsPost</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -265,7 +279,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="subMerchantsPost-code-curl">
+<div class="code-block curl active" id="subMerchantsPost-code-curl">
 ```js
 curl -X POST\
 -H "Accept: application/json"\
@@ -274,7 +288,7 @@ curl -X POST\
 ```
 </div>
 
-<div className="code-block java" id="subMerchantsPost-code-java">
+<div class="code-block java" id="subMerchantsPost-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -302,7 +316,7 @@ public class SubMerchantsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="subMerchantsPost-code-android">
+<div class="code-block android" id="subMerchantsPost-code-android">
 ```js
 import io.swagger.client.api.SubMerchantsApi;
 
@@ -323,7 +337,7 @@ public class SubMerchantsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="subMerchantsPost-code-objc">
+<div class="code-block objc" id="subMerchantsPost-code-objc">
 ```js
 String *name = name_example; //  (optional)
 
@@ -341,7 +355,7 @@ SubMerchantsApi *apiInstance = [[SubMerchantsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="subMerchantsPost-code-javascript">
+<div class="code-block javascript" id="subMerchantsPost-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -360,7 +374,7 @@ api.subMerchantsPost(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="subMerchantsPost-code-csharp">
+<div class="code-block csharp" id="subMerchantsPost-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -393,7 +407,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="subMerchantsPost-code-php">
+<div class="code-block php" id="subMerchantsPost-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -411,7 +425,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="subMerchantsPost-code-perl">
+<div class="code-block perl" id="subMerchantsPost-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -430,7 +444,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="subMerchantsPost-code-python">
+<div class="code-block python" id="subMerchantsPost-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -449,23 +463,32 @@ except ApiException as e:
     print("Exception when calling SubMerchantsApi->subMerchantsPost: %s\n" % e)
 ```
 </div>
+     
     </div>
+     
+### Parameters
+
+| Name | Description |
+|------|-------------|
+| name | String |
+
   </div>
 </div>
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-  <div className="sub-heading" style={{ flex: 2 }}>
+
+  <div class="sub-heading" style={{flex: 2}}>
     <h3>subMerchantsSearchGet</h3>
   </div>
-  <div className="code" style={{ flex: 2 }}>
-    <div className="code-container">
-      <div className="code-header">subMerchantsSearchGet</div>
-      <div className="code-dropdown">
-        <select onChange={(e) => handleLanguageChange(e.target)}>
+  <div class="code" style={{flex: 2}}>
+    <div class="code-container">
+      <div class="code-header">subMerchantsSearchGet</div>
+      <div class="code-dropdown">
+        <select  onChange={(e) => handleLanguageChange(e.target)}>
           <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
         </select>
-         <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
                 <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
@@ -474,7 +497,7 @@ except ApiException as e:
               </button>
       </div>
       
-<div className="code-block curl active" id="subMerchantsSearchGet-code-curl">
+<div class="code-block curl active" id="subMerchantsSearchGet-code-curl">
 ```js
 curl -X GET\
 -H "Accept: application/json"\
@@ -482,7 +505,7 @@ curl -X GET\
 ```
 </div>
 
-<div className="code-block java" id="subMerchantsSearchGet-code-java">
+<div class="code-block java" id="subMerchantsSearchGet-code-java">
 ```js
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -516,7 +539,7 @@ public class SubMerchantsApiExample {
 ```
 </div>
 
-<div className="code-block android" id="subMerchantsSearchGet-code-android">
+<div class="code-block android" id="subMerchantsSearchGet-code-android">
 ```js
 import io.swagger.client.api.SubMerchantsApi;
 
@@ -543,7 +566,7 @@ public class SubMerchantsApiExample {
 ```
 </div>
 
-<div className="code-block objc" id="subMerchantsSearchGet-code-objc">
+<div class="code-block objc" id="subMerchantsSearchGet-code-objc">
 ```js
 String *scope = scope_example; //  (optional) (default to sub_merchant)
 String *query = query_example; //  (optional)
@@ -573,7 +596,7 @@ SubMerchantsApi *apiInstance = [[SubMerchantsApi alloc] init];
 ```
 </div>
 
-<div className="code-block javascript" id="subMerchantsSearchGet-code-javascript">
+<div class="code-block javascript" id="subMerchantsSearchGet-code-javascript">
 ```js
 var OmiseApi = require('omise_api');
 
@@ -598,7 +621,7 @@ api.subMerchantsSearchGet(opts, callback);
 ```
 </div>
 
-<div className="code-block csharp" id="subMerchantsSearchGet-code-csharp">
+<div class="code-block csharp" id="subMerchantsSearchGet-code-csharp">
 ```js
 using System;
 using System.Diagnostics;
@@ -637,7 +660,7 @@ namespace Example
 ```
 </div>
 
-<div className="code-block php" id="subMerchantsSearchGet-code-php">
+<div class="code-block php" id="subMerchantsSearchGet-code-php">
 ```js
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -661,7 +684,7 @@ try {
 ```
 </div>
 
-<div className="code-block perl" id="subMerchantsSearchGet-code-perl">
+<div class="code-block perl" id="subMerchantsSearchGet-code-perl">
 ```js
 use Data::Dumper;
 use WWW::SwaggerClient::Configuration;
@@ -686,7 +709,7 @@ if ($@) {
 ```
 </div>
 
-<div className="code-block python" id="subMerchantsSearchGet-code-python">
+<div class="code-block python" id="subMerchantsSearchGet-code-python">
 ```js
 from __future__ import print_statement
 import time
@@ -711,33 +734,13 @@ except ApiException as e:
     print("Exception when calling SubMerchantsApi->subMerchantsSearchGet: %s\n" % e)
 ```
 </div>
+     
     </div>
-  </div>
-</div>
-
-# Parameters
-path Parameters
+     
+### Parameters
 
 | Name | Description |
-|------|------|
-| from | Date (date-time) |
-| to | Date (date-time) |
-| offset | Integer |
-| limit | Integer |
-| order | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
-| name | String |
-
-# Parameters
-path Parameters
-
-| Name | Description |
-|------|------|
+|------|-------------|
 | scope | String |
 | query | String |
 | filters[agreement_accepted] | Integer |
@@ -745,4 +748,7 @@ path Parameters
 | filters[live_activated] | Boolean |
 | filters[owner_uid] | String |
 | filters[registration_status] | String |
+
+  </div>
+</div>
 
