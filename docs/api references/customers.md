@@ -1,27 +1,28 @@
 # Customers
 
 
-<div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
 
-  <div class="sub-heading" style={{flex: 2}}>
-    <h3>customersGet</h3>
-  </div>
-  <div class="code" style={{flex: 2}}>
-    <div class="code-container">
-      <div class="code-header">customersGet</div>
-      <div class="code-dropdown">
-        <select  onChange={(e) => handleLanguageChange(e.target)}>
-          <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
-        </select>
-        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+          <div class="sub-heading" style={{flex: 2}}>
+            <h3>customersGet</h3>
+          </div>
+          <div class="code" style={{flex: 2}}>
+            <div class="code-container">
+              <div class="code-header">customersGet</div>
+              <div class="code-dropdown">
+                <select  onChange={(e) => handleLanguageChange(e.target)}>
+                  <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
+                </select>
+                <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
 
-                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
-                </svg>
-              </button>
-      </div>
-      
+                        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
+                        </svg>
+                      </button>
+              </div>
+              
 <div class="code-block curl active" id="customersGet-code-curl">
 ```js
 curl -X GET\
@@ -241,9 +242,9 @@ except ApiException as e:
     print("Exception when calling CustomersApi->customersGet: %s\n" % e)
 ```
 </div>
-     
-    </div>
-     
+            
+            </div>
+            
 ### Parameters
 
 | Name | Description |
@@ -254,31 +255,61 @@ except ApiException as e:
 | limit | Integer |
 | order | String |
 
-  </div>
-</div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-heading" >
+            <h3>Responses</h3>
+            <h4>Status: 200 </h4>
+          </div>
+          | Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
 
-
-<div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-
-  <div class="sub-heading" style={{flex: 2}}>
-    <h3>customersIdDelete</h3>
-  </div>
-  <div class="code" style={{flex: 2}}>
-    <div class="code-container">
-      <div class="code-header">customersIdDelete</div>
-      <div class="code-dropdown">
-        <select  onChange={(e) => handleLanguageChange(e.target)}>
-          <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
-        </select>
-        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
-
-                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
-                </svg>
-              </button>
+        </div>
       </div>
-      
+
+
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
+
+          <div class="sub-heading" style={{flex: 2}}>
+            <h3>customersIdDelete</h3>
+          </div>
+          <div class="code" style={{flex: 2}}>
+            <div class="code-container">
+              <div class="code-header">customersIdDelete</div>
+              <div class="code-dropdown">
+                <select  onChange={(e) => handleLanguageChange(e.target)}>
+                  <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
+                </select>
+                <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+
+                        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
+                        </svg>
+                      </button>
+              </div>
+              
 <div class="code-block curl active" id="customersIdDelete-code-curl">
 ```js
 curl -X DELETE\
@@ -461,40 +492,70 @@ except ApiException as e:
     print("Exception when calling CustomersApi->customersIdDelete: %s\n" % e)
 ```
 </div>
-     
-    </div>
-     
+            
+            </div>
+            
 ### Parameters
 
 | Name | Description |
 |------|-------------|
 | id* | String Required |
 
-  </div>
-</div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-heading" >
+            <h3>Responses</h3>
+            <h4>Status: 200 </h4>
+          </div>
+          | Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
 
-
-<div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-
-  <div class="sub-heading" style={{flex: 2}}>
-    <h3>customersIdGet</h3>
-  </div>
-  <div class="code" style={{flex: 2}}>
-    <div class="code-container">
-      <div class="code-header">customersIdGet</div>
-      <div class="code-dropdown">
-        <select  onChange={(e) => handleLanguageChange(e.target)}>
-          <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
-        </select>
-        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
-
-                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
-                </svg>
-              </button>
+        </div>
       </div>
-      
+
+
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
+
+          <div class="sub-heading" style={{flex: 2}}>
+            <h3>customersIdGet</h3>
+          </div>
+          <div class="code" style={{flex: 2}}>
+            <div class="code-container">
+              <div class="code-header">customersIdGet</div>
+              <div class="code-dropdown">
+                <select  onChange={(e) => handleLanguageChange(e.target)}>
+                  <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
+                </select>
+                <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+
+                        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
+                        </svg>
+                      </button>
+              </div>
+              
 <div class="code-block curl active" id="customersIdGet-code-curl">
 ```js
 curl -X GET\
@@ -677,40 +738,70 @@ except ApiException as e:
     print("Exception when calling CustomersApi->customersIdGet: %s\n" % e)
 ```
 </div>
-     
-    </div>
-     
+            
+            </div>
+            
 ### Parameters
 
 | Name | Description |
 |------|-------------|
 | id* | String Required |
 
-  </div>
-</div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-heading" >
+            <h3>Responses</h3>
+            <h4>Status: 200 </h4>
+          </div>
+          | Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
 
-
-<div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-
-  <div class="sub-heading" style={{flex: 2}}>
-    <h3>customersIdPatch</h3>
-  </div>
-  <div class="code" style={{flex: 2}}>
-    <div class="code-container">
-      <div class="code-header">customersIdPatch</div>
-      <div class="code-dropdown">
-        <select  onChange={(e) => handleLanguageChange(e.target)}>
-          <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
-        </select>
-        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
-
-                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
-                </svg>
-              </button>
+        </div>
       </div>
-      
+
+
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
+
+          <div class="sub-heading" style={{flex: 2}}>
+            <h3>customersIdPatch</h3>
+          </div>
+          <div class="code" style={{flex: 2}}>
+            <div class="code-container">
+              <div class="code-header">customersIdPatch</div>
+              <div class="code-dropdown">
+                <select  onChange={(e) => handleLanguageChange(e.target)}>
+                  <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
+                </select>
+                <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+
+                        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
+                        </svg>
+                      </button>
+              </div>
+              
 <div class="code-block curl active" id="customersIdPatch-code-curl">
 ```js
 curl -X PATCH\
@@ -949,9 +1040,9 @@ except ApiException as e:
     print("Exception when calling CustomersApi->customersIdPatch: %s\n" % e)
 ```
 </div>
-     
-    </div>
-     
+            
+            </div>
+            
 ### Parameters
 
 | Name | Description |
@@ -970,31 +1061,83 @@ except ApiException as e:
 | description | String |
 | email | String |
 
-  </div>
-</div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-heading" >
+            <h3>Responses</h3>
+            <h4>Status: 200 </h4>
+          </div>
+          | Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
 
+| Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
 
-<div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-
-  <div class="sub-heading" style={{flex: 2}}>
-    <h3>customersIdSchedulesGet</h3>
-  </div>
-  <div class="code" style={{flex: 2}}>
-    <div class="code-container">
-      <div class="code-header">customersIdSchedulesGet</div>
-      <div class="code-dropdown">
-        <select  onChange={(e) => handleLanguageChange(e.target)}>
-          <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
-        </select>
-        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
-
-                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
-                </svg>
-              </button>
+        </div>
       </div>
-      
+
+
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
+
+          <div class="sub-heading" style={{flex: 2}}>
+            <h3>customersIdSchedulesGet</h3>
+          </div>
+          <div class="code" style={{flex: 2}}>
+            <div class="code-container">
+              <div class="code-header">customersIdSchedulesGet</div>
+              <div class="code-dropdown">
+                <select  onChange={(e) => handleLanguageChange(e.target)}>
+                  <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
+                </select>
+                <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+
+                        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
+                        </svg>
+                      </button>
+              </div>
+              
 <div class="code-block curl active" id="customersIdSchedulesGet-code-curl">
 ```js
 curl -X GET\
@@ -1223,9 +1366,9 @@ except ApiException as e:
     print("Exception when calling CustomersApi->customersIdSchedulesGet: %s\n" % e)
 ```
 </div>
-     
-    </div>
-     
+            
+            </div>
+            
 ### Parameters
 
 | Name | Description |
@@ -1243,31 +1386,83 @@ except ApiException as e:
 | limit | Integer |
 | order | String |
 
-  </div>
-</div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-heading" >
+            <h3>Responses</h3>
+            <h4>Status: 200 </h4>
+          </div>
+          | Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
 
+| Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
 
-<div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-
-  <div class="sub-heading" style={{flex: 2}}>
-    <h3>customersPost</h3>
-  </div>
-  <div class="code" style={{flex: 2}}>
-    <div class="code-container">
-      <div class="code-header">customersPost</div>
-      <div class="code-dropdown">
-        <select  onChange={(e) => handleLanguageChange(e.target)}>
-          <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
-        </select>
-        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
-
-                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
-                </svg>
-              </button>
+        </div>
       </div>
-      
+
+
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
+
+          <div class="sub-heading" style={{flex: 2}}>
+            <h3>customersPost</h3>
+          </div>
+          <div class="code" style={{flex: 2}}>
+            <div class="code-container">
+              <div class="code-header">customersPost</div>
+              <div class="code-dropdown">
+                <select  onChange={(e) => handleLanguageChange(e.target)}>
+                  <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
+                </select>
+                <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+
+                        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
+                        </svg>
+                      </button>
+              </div>
+              
 <div class="code-block curl active" id="customersPost-code-curl">
 ```js
 curl -X POST\
@@ -1488,9 +1683,9 @@ except ApiException as e:
     print("Exception when calling CustomersApi->customersPost: %s\n" % e)
 ```
 </div>
-     
-    </div>
-     
+            
+            </div>
+            
 ### Parameters
 
 | Name | Description |
@@ -1501,31 +1696,61 @@ except ApiException as e:
 | email | String |
 | linked_account | String |
 
-  </div>
-</div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-heading" >
+            <h3>Responses</h3>
+            <h4>Status: 200 </h4>
+          </div>
+          | Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
 
-
-<div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-
-  <div class="sub-heading" style={{flex: 2}}>
-    <h3>customersSearchGet</h3>
-  </div>
-  <div class="code" style={{flex: 2}}>
-    <div class="code-container">
-      <div class="code-header">customersSearchGet</div>
-      <div class="code-dropdown">
-        <select  onChange={(e) => handleLanguageChange(e.target)}>
-          <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
-        </select>
-        <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
-
-                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
-                </svg>
-              </button>
+        </div>
       </div>
-      
+
+
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
+
+          <div class="sub-heading" style={{flex: 2}}>
+            <h3>customersSearchGet</h3>
+          </div>
+          <div class="code" style={{flex: 2}}>
+            <div class="code-container">
+              <div class="code-header">customersSearchGet</div>
+              <div class="code-dropdown">
+                <select  onChange={(e) => handleLanguageChange(e.target)}>
+                  <option value="curl">curl</option><option value="java">java</option><option value="android">android</option><option value="objc">objc</option><option value="javascript">javascript</option><option value="csharp">csharp</option><option value="php">php</option><option value="perl">perl</option><option value="python">python</option>
+                </select>
+                <button className="copy-btn" onClick={(e) => copyActiveCode(e.currentTarget)} title="Copy to clipboard">
+
+                        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.375c0-.345.28-.625.625-.625h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 6.375Zm0 2.25C4 8.28 4.28 8 4.625 8h2.75a.625.625 0 1 1 0 1.25h-2.75A.625.625 0 0 1 4 8.625Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.437 1.5A2 2 0 0 0 6.5 0h-1a2 2 0 0 0-1.937 1.5H3a2 2 0 0 0-2 2V10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-.563ZM4.9 3.1h2.2V2a.6.6 0 0 0-.6-.6h-1a.6.6 0 0 0-.6.6v1.1ZM8 4.5H4a.5.5 0 0 1-.5-.5V2.9H3a.6.6 0 0 0-.6.6V10a.6.6 0 0 0 .6.6h6a.6.6 0 0 0 .6-.6V3.5a.6.6 0 0 0-.6-.6h-.5V4a.5.5 0 0 1-.5.5Z"></path>
+                        </svg>
+                      </button>
+              </div>
+              
 <div class="code-block curl active" id="customersSearchGet-code-curl">
 ```js
 curl -X GET\
@@ -1727,9 +1952,9 @@ except ApiException as e:
     print("Exception when calling CustomersApi->customersSearchGet: %s\n" % e)
 ```
 </div>
-     
-    </div>
-     
+            
+            </div>
+            
 ### Parameters
 
 | Name | Description |
@@ -1738,6 +1963,35 @@ except ApiException as e:
 | query | String |
 | filters[created] | Date (date-time) |
 
-  </div>
-</div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-heading" >
+            <h3>Responses</h3>
+            <h4>Status: 200 </h4>
+          </div>
+          | Name | Type | Format | Default | Enum | Pattern |
+|------|------|--------|---------|------|---------|
+| id | string |  |  |  | account_[0-9a-z]+ |
+| team | string |  |  |  | acct_[0-9a-z]+ |
+| livemode | boolean |  |  | true, false |  |
+| location | string |  |  |  |  |
+| country | string |  |  |  |  |
+| currency | string | currency |  |  |  |
+| email | string |  |  |  |  |
+| created_at | string | date-time |  |  |  |
+| supported_currencies | array |  |  |  |  |
+| api_version | string |  |  |  |  |
+| auto_activate_recipients | boolean |  |  | true, false |  |
+| chain_enabled | boolean |  |  | true, false |  |
+| zero_interest_installments | boolean |  |  | true, false |  |
+| chain_return_uri | string | uri |  |  |  |
+| webhook_uri | string | uri |  |  |  |
+| metadata_export_keys | object |  |  |  |  |
+| chaining_allowed | boolean |  |  | true, false |  |
+| last_updated_api_version | string |  |  |  |  |
+| transfer_config | object |  |  |  |  |
+
+        </div>
+      </div>
 
