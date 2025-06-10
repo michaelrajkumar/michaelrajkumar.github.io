@@ -274,11 +274,11 @@ except ApiException as e:
           </div>
         </div>
         <div>
-          <div class="sub-heading" >
-            <h3>Responses</h3>
-            <h4>Status: 200 </h4>
-          </div>
-          | Name | Type | Format | Default | Enum | Pattern |
+          ### Responses
+
+ ### Status: 200
+
+| Name | Type | Format | Default | Enum | Pattern |
 |------|------|--------|---------|------|---------|
 | id | string |  |  |  | account_[0-9a-z]+ |
 | team | string |  |  |  | acct_[0-9a-z]+ |
@@ -299,6 +299,10 @@ except ApiException as e:
 | chaining_allowed | boolean |  |  | true, false |  |
 | last_updated_api_version | string |  |  |  |  |
 | transfer_config | object |  |  |  |  |
+
+### Responses
+
+ ### Status: 200
 
 | Name | Type | Format | Default | Enum | Pattern |
 |------|------|--------|---------|------|---------|
@@ -580,11 +584,11 @@ except ApiException as e:
           </div>
         </div>
         <div>
-          <div class="sub-heading" >
-            <h3>Responses</h3>
-            <h4>Status: 200 </h4>
-          </div>
-          | Name | Type | Format | Default | Enum | Pattern |
+          ### Responses
+
+ ### Status: 200
+
+| Name | Type | Format | Default | Enum | Pattern |
 |------|------|--------|---------|------|---------|
 | id | string |  |  |  | account_[0-9a-z]+ |
 | team | string |  |  |  | acct_[0-9a-z]+ |
@@ -605,6 +609,10 @@ except ApiException as e:
 | chaining_allowed | boolean |  |  | true, false |  |
 | last_updated_api_version | string |  |  |  |  |
 | transfer_config | object |  |  |  |  |
+
+### Responses
+
+ ### Status: 200
 
 | Name | Type | Format | Default | Enum | Pattern |
 |------|------|--------|---------|------|---------|
@@ -858,11 +866,11 @@ except ApiException as e:
           </div>
         </div>
         <div>
-          <div class="sub-heading" >
-            <h3>Responses</h3>
-            <h4>Status: 200 </h4>
-          </div>
-          | Name | Type | Format | Default | Enum | Pattern |
+          ### Responses
+
+ ### Status: 200
+
+| Name | Type | Format | Default | Enum | Pattern |
 |------|------|--------|---------|------|---------|
 | id | string |  |  |  | account_[0-9a-z]+ |
 | team | string |  |  |  | acct_[0-9a-z]+ |
@@ -1145,11 +1153,11 @@ except ApiException as e:
           </div>
         </div>
         <div>
-          <div class="sub-heading" >
-            <h3>Responses</h3>
-            <h4>Status: 200 </h4>
-          </div>
-          | Name | Type | Format | Default | Enum | Pattern |
+          ### Responses
+
+ ### Status: 200
+
+| Name | Type | Format | Default | Enum | Pattern |
 |------|------|--------|---------|------|---------|
 | id | string |  |  |  | account_[0-9a-z]+ |
 | team | string |  |  |  | acct_[0-9a-z]+ |
@@ -1482,11 +1490,11 @@ except ApiException as e:
           </div>
         </div>
         <div>
-          <div class="sub-heading" >
-            <h3>Responses</h3>
-            <h4>Status: 200 </h4>
-          </div>
-          | Name | Type | Format | Default | Enum | Pattern |
+          ### Responses
+
+ ### Status: 200
+
+| Name | Type | Format | Default | Enum | Pattern |
 |------|------|--------|---------|------|---------|
 | id | string |  |  |  | account_[0-9a-z]+ |
 | team | string |  |  |  | acct_[0-9a-z]+ |

@@ -201,10 +201,6 @@ except ApiException as e:
           </div>
         </div>
         <div>
-          <div class="sub-heading" >
-            <h3>Responses</h3>
-            <h4>Status: 200 </h4>
-          </div>
           
         </div>
       </div>
