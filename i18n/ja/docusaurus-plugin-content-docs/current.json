@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "カナリア",
+    "message": "APIバージョン 2019-06-09",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.GUIDE": {

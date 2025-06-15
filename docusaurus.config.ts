@@ -60,8 +60,8 @@ const config: Config = {
         routeBasePath: '/', // 👈 Set docs as the home page
           sidebarPath: './sidebars.ts',
           editUrl: undefined, // 👈 disables the "Edit this page" link
-          lastVersion: 'API version 2025-05-27',
-          onlyIncludeVersions: ['API version 2019-03-20','API version 2025-05-27'],
+          lastVersion: 'current',
+          // onlyIncludeVersions: ['API version 2019-03-20','API version 2025-05-27'],
             versions: {
               current: {
                 label: 'current'
@@ -91,7 +91,9 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  scripts: [
+    '/js/custom.js',
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -278,6 +280,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      
     },
     plugins: [
       // other plugins
